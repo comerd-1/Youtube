@@ -1,0 +1,265 @@
+body{
+    background-color: #181818;
+    color: #ffffff;
+}
+
+html, body{
+    height: 100%;
+}
+
+.page{
+    height: 100%;
+}
+
+.page-left{
+    background-color: #212121;
+    height: 100%;
+    width: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page-left .top{
+    display: flex;
+    padding: 16px 20px;
+    align-items: center;
+}
+
+.page-left .top .icon{
+    margin-right: 18px;
+}
+
+
+.navbar{
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.navbar .nav-link{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #ffffff;
+    position: relative;
+    padding-right: 22px;
+}
+
+.navbar .nav-link.active{
+    background-color: #383838;
+}
+
+.navbar .nav-title{
+    padding-left: 20px;
+    color: #aaaaaa;
+    margin-bottom: 8px;
+}
+
+.navbar .nav-link .dot{
+    width: 4px;
+    height: 4px;
+    background-color: #3DA6FF;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    right: 14px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.navbar .nav-link .icon{
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.page-heder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 32px 7px 0;
+    position: fixed;
+    left: 280px;
+    right: 0;
+    top: 0;
+    background-color: #181818;
+}
+
+.page-heder .profil{
+    width: 28px;
+    height: 28px;
+}
+
+.page-heder .search-content{
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    justify-content: center;
+}
+
+.page-heder .search{
+    border: 1px solid #323232;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    border-radius: 2px;
+}
+
+.page-heder .search input{
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 6px;
+    color: #ffffff;
+}
+
+.page-heder .search input::placeholder{
+    color: #AAAAAA;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.page-heder .search .search-icon{
+    background-color: #323232;
+    height: 36px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-heder .buttons{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons >*:not(:last-child){
+    margin-right: 20px;
+}
+
+.dropdown{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 32px;
+    margin-left: 24px;
+    overflow: hidden;
+}
+
+.page-right{
+    padding-left: 20px;
+}
+
+.header{
+    background-color: #181818;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin-left: 270px;
+    margin-top: 50px;
+    border-top: 1px solid #383838;
+    padding: 10px;
+    padding-left: 14px;
+    border-bottom: 1px solid #383838;
+    cursor: pointer;
+}
+
+.hed .arrow{
+    background: linear-gradient(270deg, #121212 67.19%, rgba(33, 33, 33, 0) 100%);
+}
+
+
+.category{
+    background-color: #383838;
+    border: 1px solid #474747;
+    border-radius: 25px;
+    padding: 8px 12px 8px 12px;
+    white-space: nowrap;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 12px;
+    color: #ffffff;
+}
+
+.category.active{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.wiews-upload .nokte{
+    width: 4px;
+    height: 4px;
+    background-color: #AAAAAA;
+    display: flex;
+    border-radius: 50%;
+    right: 14px;
+    padding: 0;
+    top: 0px;
+    bottom: 0;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+p{
+  line-height: 50px;  
+}
+
+.video-container{
+    width: 1010px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 18px;
+    padding: 20px 25px;
+    background-color: #181818;
+    overflow-y: calc(100% - 130px);
+    height: calc(100hv - 116px);
+    margin-left: 280px;
+}
+
+.video-content{
+    width: 100%;
+}
+
+.video-box{
+    width: 250px;
+    height: 136px;
+    display: inline-block;
+    margin-top: 130px;
+}
+
+
+.channel-logo{
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.video-details{
+    display: flex;
+    color: #ffffff;
+    padding-top: 12px;
+}
+
+.channel-name{
+    margin-top: 7px;
+}
+
+.detail{
+    margin-left: 12px;
+}
+
+.wiews-upload{
+    display: flex;
+}
